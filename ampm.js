@@ -1,10 +1,10 @@
-function ampm()
-{
+function ampm() {
 var h = new Date().getHours();
-var ampm = "am";
+var ampmstr = "am";
 if (h > 11) {
-ampm = "pm";
+ampmstr = "pm";
 }
-$("#ampm").html(ampm);
+$("#ampm").html("");
+$("#ampm").html(ampmstr);
+t=setTimeout(function() {ampm()},500);
 }
-t=setTimeout(function(){ampm()},500);

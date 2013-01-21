@@ -14,7 +14,8 @@ $.getJSON(url, function(data) {
         arrow = "▼";
         color = "#ff0000";
     }
+    $("#stocks").html("");
     $("#stocks").html('<div id="arrow" style="color: '+color+';">'+arrow+'</div><div id="quote">AAPL '+html.BidRealtime+'</div>');
 });
-}
 t=setTimeout(function(){stocks()},15000);
+}

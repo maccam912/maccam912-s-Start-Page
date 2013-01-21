@@ -9,6 +9,10 @@ var month = today.getMonth();
 h = h%12;
 m=checkTime(m);
 h=checkTime(h);
+if (h == 0) {
+    h = 12;
+}
+$("#clock").html("");
 $("#clock").html(h+":"+m);
 
 var weekday = new Array(7);

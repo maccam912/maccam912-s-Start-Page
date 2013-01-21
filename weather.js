@@ -6,6 +6,7 @@ $.getJSON(url, function(data) {
 	console.log(data);
 	var html = '<div class="weathercontainer" id="nowcontainer"><div id="nowlabel">Now</div><div id="nowcond"><img src="http://l.yimg.com/a/i/us/we/52/'+item.condition.code+'.gif"/>'+item.condition.text+'</div><div id="temp">'+item.condition.temp+'°</div></div>';
     html += '<div class="weathercontainer" id="tomorrowcontainer"><div id="tomorrowlabel">Tomorrow</div><div id="high">'+item.forecast[1].high+'°</div><div id="forecast">'+item.forecast[1].text+'</div><div id="low">'+item.forecast[1].low+'°</div></div>';
+    $("#weather").html("");
     $("#weather").html(html);
 });
 }

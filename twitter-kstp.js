@@ -35,5 +35,5 @@ function twitterkstp(){
             $("#twitter-feed-kstp").append('<p>'+tweet+'</p><hr>');
         }
     });
-}
 t=setTimeout(function(){twitterkstp()},48000);
+}
