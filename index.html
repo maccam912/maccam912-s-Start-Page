@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="twitter-kstp.js"></script>
+<script type="text/javascript" src="twitter-world.js"></script>
+<script type="text/javascript" src="clock.js"></script>
+<script type="text/javascript" src="ampm.js"></script>
+<script type="text/javascript" src="weather.js"></script>
+<script type="text/javascript" src="stocks.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	twitterkstp();
+	twitterworld();
+	clock();
+	ampm();
+	weather();
+	stocks();
+    var lmargin = (window.innerWidth-950)/2;
+    $(document).ready(function() {
+        $("#container").css("margin-left", lmargin-50);
+    });
+});
+</script><title></title></head>
+<body>
+<div style="margin-top: 100px; margin-left: 100px; position: absolute;" id="container">
+	<div id="clock">00:00</div>
+	<div id="date">Date</div>
+	<div id="ampm">am</div>
+	<div id="weather">weather</div>
+	<div id="twitter-feed-kstp">KSTP Breaking News</div>
+	<div id="twitter-feed-world">Breaking News</div>
+    <div id="stocks">stocks</div>
+</div>
+</body></html>

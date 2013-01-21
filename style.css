@@ -1,0 +1,150 @@
+#clock {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 250px;
+  height: 100px;
+  font-size: 72pt;
+  font-family: Helvetica,sans-serif;
+  font-weight: bold;
+}
+#date {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    width: 400px;
+    height: 50px;
+    font-size: 22pt;
+    font-family: Helvetica,sans-serif;
+    font-style: italic;
+}
+#ampm {
+  position: absolute;
+  left: 250px;
+  top: 30px;
+  width: 50px;
+  height: 35px;
+  font-size: 24pt;
+  color: #888888;
+  font-family: Helvetica,sans-serif;
+  font-weight: bold;
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari and Chrome */
+  -o-transform: rotate(90deg); /* Opera */
+  -moz-transform: rotate(90deg); /* Firefox */
+}
+#weather {
+  position: absolute;
+  left: 0px;
+  top: 150px;
+  width: 900px;
+  font-size: 24pt;
+  font-family: Helvetica,sans-serif;
+  font-weight: bold;
+}
+#temp {
+    font-size: 72pt;
+    position: absolute;
+    left: 66px;
+    top: 10px;
+}
+#nowcond {
+    position: absolute;
+    left: 40px;
+    top: 90px;
+}
+#arrow {
+    position: absolute;
+    font-size: 24pt;
+    left: 200px;
+    top: 0px;
+}
+#stocks {
+    position: absolute;
+    font-size: 24pt;
+    left: 600px;
+    top: 0px;
+    width: 300px;
+
+}
+#nowlabel {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+    width: 20px;
+    height: 20px;
+    font-style: italic;
+    color: #888888;
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari and Chrome */
+    -o-transform: rotate(270deg); /* Opera */
+    -moz-transform: rotate(270deg); /* Firefox */
+}
+#nowcontainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 400px;
+    height: 170px;
+}
+#tomorrowlabel {
+    position: absolute;
+    left: 10px;
+    top: 160px;
+    width: 20px;
+    height: 20px;
+    font-style: italic;
+    color: #888888;
+    transform: rotate(270deg);
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari and Chrome */
+    -o-transform: rotate(270deg); /* Opera */
+    -moz-transform: rotate(270deg); /* Firefox */
+}
+#tomorrowcontainer {
+    position: absolute;
+    left: 0px;
+    top: 190px;
+    width: 400px;
+    height: 200px;
+}
+#forecast{
+    position: absolute;
+    left: 66px;
+    top: 80px;
+}
+#low {
+    position: absolute;
+    left: 66px;
+    top: 130px;
+}
+#high {
+    position: absolute;
+    left: 66px;
+    top: 30px;
+}
+#twitter-feed-kstp {
+  position: absolute;
+  left: 450px;
+  top: 90px;
+  width: 250px;
+  height: 600px;
+  font-size: 12pt;
+  font-family: Georgia,serif;
+}
+#twitter-feed-world {
+  position: absolute;
+  left: 750px;
+  top: 90px;
+  width: 200px;
+  height: 600px;
+  font-size: 12pt;
+  font-family: Georgia,serif;
+}
+.user {
+    font-size: 20pt;
+    font-family: Georgia,serif;
+    font-style: italic;
+}
