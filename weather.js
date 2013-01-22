@@ -1,8 +1,5 @@
 ﻿function weather(woeid) {
     var html = "";
-    if (!woeid) {
-        woeid = 12781895;
-    }
 var query = escape('select item from weather.forecast where woeid="'+woeid+'"');
 var url = "http://query.yahooapis.com/v1/public/yql?q=" + query + "&format=json&callback=?";
 $.getJSON(url, function(data) {
