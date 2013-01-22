@@ -35,5 +35,5 @@ function twitterworld(){
             $("#twitter-feed-world").append('<p>'+tweet+'</p><hr>');
         }
     });
-t=setTimeout(function(){twitterworld()},48000);
+t=setTimeout(function(){twitterworld()},60000);
 }

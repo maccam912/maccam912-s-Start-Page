@@ -9,5 +9,5 @@ $.getJSON(url, function(data) {
     $("#weather").html("");
     $("#weather").html(html);
 });
-}
 t=setTimeout(function(){weather()},60000);
+}
