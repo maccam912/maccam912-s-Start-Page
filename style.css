@@ -125,24 +125,23 @@
     left: 66px;
     top: 30px;
 }
-.twitter {
+#twitter {
     font-size: 12pt;
-    font-family: Georgia,serif;
-    width: 250px;
+    position: absolute;
+    left: 400px;
+    top: 80px;
+    width: 600px;
     height: 600px;
-}
-#reddit {
-  position: absolute;
-  left: 450px;
-  top: 90px;
-}
-#BreakingNews {
-  position: absolute;
-  left: 750px;
-  top: 90px;
 }
 .user {
     font-size: 20pt;
     font-family: Georgia,serif;
     font-style: italic;
+}
+.tweet {
+    padding: 30px;
+    background-color: red;
+}
+.tweettext {
+    font-family: Georgia,serif;
 }

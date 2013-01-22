@@ -21,18 +21,28 @@ function parseDate(str) {
     return new Date(Date.parse(v[1]+" "+v[2]+", "+v[5]+" "+v[3]+" UTC"));
 }
 
-function twitter(user){
-    var numTweets = 15;
+function twitter(str) {
+    $("#twitter").html("");
+    var arr = str.split("+");
+    for (var i = 0; i < arr.length; i++) {
+        tweet(arr[i]);
+    }
+}
+
+function tweet(user){
+    var numTweets = 1;
     var url = 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&count='+numTweets+'&include_rts=1&include_entities=1&screen_name='+user;
     console.log(url);
 	$.getJSON(url,function(data){
-    $("#"+user).html('<div class="user">'+user+'</div>');
+    $("#twitter").append('<div class="tweet">');
+    $(".tweet").last().append('<div class="user">'+user+'</div>');
     for(var i = 0; i< data.length; i++){
             var tweet = data[i].text;
             var created = parseDate(data[i].created_at);
             var createdDate = created.getDate()+'-'+(created.getMonth()+1)+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
             tweet = tweet.parseURL().parseUsername().parseHashtag();
-            $("#"+user).append('<p>'+tweet+'</p><hr>');
+            $(".tweet").last().append('<div class="tweettext">'+tweet+'</div>');
+            $("#twitter").append('</div>');
         }
     });
 t=setTimeout(function(){twitter(user)},60000);
