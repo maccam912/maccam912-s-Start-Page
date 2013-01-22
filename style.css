@@ -125,23 +125,21 @@
     left: 66px;
     top: 30px;
 }
-#twitter-feed-kstp {
+.twitter {
+    font-size: 12pt;
+    font-family: Georgia,serif;
+    width: 250px;
+    height: 600px;
+}
+#reddit {
   position: absolute;
   left: 450px;
   top: 90px;
-  width: 250px;
-  height: 600px;
-  font-size: 12pt;
-  font-family: Georgia,serif;
 }
-#twitter-feed-world {
+#BreakingNews {
   position: absolute;
   left: 750px;
   top: 90px;
-  width: 200px;
-  height: 600px;
-  font-size: 12pt;
-  font-family: Georgia,serif;
 }
 .user {
     font-size: 20pt;

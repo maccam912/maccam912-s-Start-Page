@@ -10,8 +10,8 @@
 <script type="text/javascript" src="stocks.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
-	twitterkstp();
-	twitterworld();
+	twitter("reddit");
+	twitter("BreakingNews");
 	clock();
 	ampm();
 	weather();
@@ -28,8 +28,8 @@ $(document).ready(function() {
 	<div id="date">Date</div>
 	<div id="ampm">am</div>
 	<div id="weather">weather</div>
-	<div id="twitter-feed-kstp">KSTP Breaking News</div>
-	<div id="twitter-feed-world">Breaking News</div>
+    <div class="twitter" id="reddit"></div>
+    <div class="twitter" id="BreakingNews"></div>
     <div id="stocks">stocks</div>
 </div>
 </body></html>
