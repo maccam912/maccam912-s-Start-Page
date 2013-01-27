@@ -27,7 +27,7 @@ function twitter(str) {
     for (var i = 0; i < arr.length; i++) {
         tweet(arr[i]);
     }
-    t=setTimeout(function(){twitter(user)},(3600000*arr.length)/200);
+    t=setTimeout(function(){twitter(str)},(3600000*arr.length)/200);
 }
 
 function tweet(user){
