@@ -25,7 +25,7 @@ $(document).ready(function() {
 	clock();
 	ampm();
 	weather(woeid);
-	stocks();
+	stocks(getUrlVars()["stocks"]);
     var lmargin = (window.innerWidth-950)/2;
     $(document).ready(function() {
         $("#container").css("margin-left", lmargin-50);

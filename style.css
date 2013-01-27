@@ -1,3 +1,6 @@
+html {
+    background-color: #fff;
+}
 #clock {
   position: absolute;
   left: 0px;
@@ -58,7 +61,6 @@
     position: absolute;
     font-size: 24pt;
     left: 200px;
-    top: 0px;
 }
 #stocks {
     position: absolute;
